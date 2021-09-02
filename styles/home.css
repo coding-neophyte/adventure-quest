@@ -38,6 +38,11 @@ main {
     height: 100%;
 }
 
+.character-image {
+    width: 100px;
+    height: 100px;
+}
+
 form {
     border: 2px black solid;
     padding: 20px;
@@ -53,4 +58,17 @@ form > label {
     margin-top: 10px;
     color: white;
     background-color: green;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input:checked + img {
+    border: solid green 2px;
+    padding: 5px;
+}
+
+input + img {
+    cursor: pointer;
 }
