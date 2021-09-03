@@ -18,27 +18,35 @@ header {
     justify-content: center;
     align-items: center;
     box-shadow: var(--shadow);
-    height: 80px;
+    height: 10rem;
     color: white;
     background-color: green;
+    font-size: 3rem;
 }
 
 main {
     display: grid;
-    grid-template-rows: 3fr 1fr 3fr;
+    grid-template-rows: 5fr 1fr 5fr;
     height: 100%;
 }
 
-/* main {
+.flex-center {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100%;
-} */
+}
 
+.image-section {
+    align-items: center;
+}
+
+p {
+    font-size: 3rem;
+    padding: 10px;
+    border: green dotted 2px;
+    height: fit-content;
+}
 .form-section {
-    display: flex;
-    justify-content: center;
+    align-items: flex-start;
 }
 
 form {
@@ -47,18 +55,27 @@ form {
     display: flex; 
     flex-direction: column;
     width: 50%;
-    height: 50%;
+    height: fit-content;
+    font-size: 1.3rem;
 }
 
 form > label {
     margin: 5px;
 }
 
-.submit {
+.button-container {
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+
+}
+.submit {
     color: white;
     background-color: green;
-    width: 20%;
-    height: 10%;
-    align-items: center;
+    width: 10rem;
+    height: 3rem;
+    box-shadow: var(--shadow);
+    font-size: 1.3rem;
 }

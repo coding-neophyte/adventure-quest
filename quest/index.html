@@ -14,11 +14,15 @@
       <h1 id="title"></h1>
     </header>
     <main>
+        <section class="image-section flex-center">
+            <img id="image" src="" alt="quest">
+        </section>
 
-        <img id="image" src="" alt="quest">
-        <p id="question"></p>
+        <section class="question-section flex-center">
+            <p id="question"></p>
+        </section>
 
-        <section class="form-section">
+        <section class="form-section flex-center">
           <form id="choice-form">
               <label id="choice-container-1">
                 <input type="radio"name="choice" value="choice-1" />
@@ -32,8 +36,9 @@
                 <input type="radio"name="choice" value="choice-3" />
                   <span id= description-3></span>
                </label>
-  
-              <button class="submit">Do This</button>
+               <div class = "button-container">
+                 <button class="submit">Do This</button>
+               </div>
           </form>
         </section>
 
