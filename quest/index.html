@@ -6,21 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./quest.css">
     <title>Quest</title>
 </head>
 <body>
+    <header>
+      <h1 id="title"></h1>
+    </header>
     <main>
-        <h2 id="title"></h2>
-        <img src="" alt="quest">
+
+        <img id="image" src="" alt="quest">
         <p id="question"></p>
-        <form id="choice-form">
-        <p id="choices-1"></p><p id= description-1></p><input type="radio"name="choice" value="choice1">
-        <p id="choices-2"></p><p id= description-2></p><input type="radio"name="choice" value="choice2">
-        <p id="choices-3"></p><p id= description-3></p><input type="radio" name="choice" value="choice3">
-         
-        <button>Do This</button>
-      </form>
+
+        <section class="form-section">
+          <form id="choice-form">
+              <label id="choice-container-1">
+                <input type="radio"name="choice" value="choice-1" />
+                  <span id= description-1></span>
+              </label>
+              <label id="choice-container-2">
+                <input type="radio"name="choice" value="choice-2" />
+                  <span id= description-2></span>
+              </label>
+              <label id="choice-container-3">
+                <input type="radio"name="choice" value="choice-3" />
+                  <span id= description-3></span>
+               </label>
+  
+              <button class="submit">Do This</button>
+          </form>
+        </section>
 
     </main>
 <script type="module" src="quest.js"></script>
