@@ -19,7 +19,7 @@
 //const dataId = data.get('id');
 //const choice = data.get('choice');
 
-//const search = new URLSearchParams(window.location.search);
+// const search = new URLSearchParams(window.location.search);
  //const quest = findByID(quests, questId); 
 
 
