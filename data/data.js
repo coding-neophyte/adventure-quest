@@ -1,14 +1,19 @@
 const awaken = {
     id: 'awaken',
     title: `link's awakening`,
-    image: '',
+    image: '../assets/link-awakens.png',
     question: 'You have awoken on an island with no memory of how you arrived, you hear a voice telling you to get off the island, how do you do it?',
+    position: {
+        left: '500px',
+        top: '800px',
+    },
     choices: [{
         id: 'explore island',
         description: 'walk around island searching for resources',
         result: `you found some essentials needed to build a boat and sail away`,
         hp: 0,
         rupees: 0
+
     },
     {
         id: 'swim',
@@ -33,8 +38,12 @@ const awaken = {
 const town = {
     id: 'town',
     title: `save the villagers`,
-    image: '',
+    image: '../assets/vlllage.jpeg',
     question: 'you make it to the mainland and you see a hoard of moblins heading towards the town, what do you do?',
+    position: {
+        left: '400px',
+        top: '600px',
+    },
     choices: [{
         id: 'warning',
         description: 'warn the town people of the pending moblin attack',
@@ -65,8 +74,12 @@ const town = {
 const masterSword = {
     id: 'masterSword',
     title: `master weapon`,
-    image: '',
+    image: '../assets/Master-Sword.jpeg',
     question: 'the ominous voice tells you to venture deep into the forest to find the master weapon to defeat ganondorf',
+    position: {
+        left: '1000px',
+        top: '340px',
+    },
     choices: [{
         id: 'branch',
         description: 'youve been walking for a few hours and come across a glowing branch',
@@ -98,8 +111,12 @@ const masterSword = {
 const ganon = {
     id: 'ganon',
     title: `ganons castle`,
-    image: '',
+    image: '../assets/ganons-castle.png',
     question: 'the ominous voice tells directs you on where to find ganondorf',
+    position: {
+        left: '1010px',
+        top: '600px',
+    },
     choices: [{
         id: 'duel',
         description: 'you challenge ganondorf to a duel',
