@@ -30,6 +30,10 @@ main {
     height: 100%;
 }
 
+section {
+    margin-bottom: 20px;
+}
+
 .flex-center {
     display: flex;
     justify-content: center;
@@ -39,12 +43,23 @@ main {
     align-items: center;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+}
+
 p {
     font-size: 3rem;
     padding: 10px;
     border: green dotted 2px;
     height: fit-content;
 }
+
+.question-section {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .form-section {
     align-items: flex-start;
 }
@@ -71,6 +86,7 @@ form > label {
     height: 30%;
 
 }
+
 .submit {
     color: white;
     background-color: green;
