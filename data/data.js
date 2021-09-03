@@ -1,5 +1,5 @@
 const awaken = {
-    id: awaken,
+    id: 'awaken',
     title: `link's awakening`,
     image: '',
     description: 'You have awoken on an island with no memory of how you arrived, you hear a voice telling you to get off the island, how do you do it?',
@@ -31,7 +31,7 @@ const awaken = {
 };
 
 const town = {
-    id: town,
+    id: 'town',
     title: `save the villagers`,
     image: '',
     description: 'you make it to the mainland and you see a hoard of moblins heading towards the town, what do you do?',
@@ -63,7 +63,7 @@ const town = {
 };
 
 const masterSword = {
-    id: masterSword,
+    id: 'masterSword',
     title: `master weapon`,
     image: '',
     description: 'the ominous voice tells you to venture deep into the forest to find the master weapon to defeat ganondorf',
@@ -96,7 +96,7 @@ const masterSword = {
 
 
 const ganon = {
-    id: ganon,
+    id: 'ganon',
     title: `ganons castle`,
     image: '',
     description: 'the ominous voice tells directs you on where to find ganondorf',
@@ -126,3 +126,5 @@ const ganon = {
 
     ],
 };
+const data = [awaken, town, masterSword, ganon];
+export default data;
