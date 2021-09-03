@@ -9,8 +9,8 @@ import data from '../data/data.js';
 
 // const quest = data[0];
 
-const ul = document.getElementById('ul')
-const img = document.createElement('img');
+const ul = document.getElementById('ul');
+
 
 
 
