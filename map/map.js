@@ -1,3 +1,10 @@
+// List of Quests/Questions with query param links
+
+// done: create all quest links with query params
+// add background image and styling
+// find images for data
+
+
 import data from '../data/data.js';
 
 // const quest = data[0];
