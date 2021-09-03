@@ -1,8 +1,8 @@
 const awaken = {
-    id: awaken,
+    id: 'awaken',
     title: `link's awakening`,
     image: '',
-    description: 'You have awoken on an island with no memory of how you arrived, you hear a voice telling you to get off the island, how do you do it?',
+    question: 'You have awoken on an island with no memory of how you arrived, you hear a voice telling you to get off the island, how do you do it?',
     choices: [{
         id: 'explore island',
         description: 'walk around island searching for resources',
@@ -31,10 +31,10 @@ const awaken = {
 };
 
 const town = {
-    id: town,
+    id: 'town',
     title: `save the villagers`,
     image: '',
-    description: 'you make it to the mainland and you see a hoard of moblins heading towards the town, what do you do?',
+    question: 'you make it to the mainland and you see a hoard of moblins heading towards the town, what do you do?',
     choices: [{
         id: 'warning',
         description: 'warn the town people of the pending moblin attack',
@@ -63,10 +63,10 @@ const town = {
 };
 
 const masterSword = {
-    id: masterSword,
+    id: 'masterSword',
     title: `master weapon`,
     image: '',
-    description: 'the ominous voice tells you to venture deep into the forest to find the master weapon to defeat ganondorf',
+    question: 'the ominous voice tells you to venture deep into the forest to find the master weapon to defeat ganondorf',
     choices: [{
         id: 'branch',
         description: 'youve been walking for a few hours and come across a glowing branch',
@@ -96,10 +96,10 @@ const masterSword = {
 
 
 const ganon = {
-    id: ganon,
+    id: 'ganon',
     title: `ganons castle`,
     image: '',
-    description: 'the ominous voice tells directs you on where to find ganondorf',
+    question: 'the ominous voice tells directs you on where to find ganondorf',
     choices: [{
         id: 'duel',
         description: 'you challenge ganondorf to a duel',
@@ -126,3 +126,6 @@ const ganon = {
 
     ],
 };
+
+const data = [awaken, town, masterSword, ganon];
+export default data;

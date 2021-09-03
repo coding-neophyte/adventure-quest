@@ -8,4 +8,8 @@
 7) Think about how to validate each of your steps
 8) Consider your data model. What objects will you be using? What are the key/value pairs? What arrays do you need? What needs to live in local storage?
 9) Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.
-
+Zelda theme
+Character select: Hyrulian, Zora, Goran, Korok
+Adventure Quest: Ganon's Castle, Link's awakening island, save a town, Find the master weapon;
+Ending: You die, Unworthy of master weapon (must save town & complete links awakening to retrieve master weapon and fight ganondorf), Unable to save town
+alternate ending: Peace for 100 years!!!
