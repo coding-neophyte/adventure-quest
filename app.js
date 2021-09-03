@@ -9,19 +9,19 @@ import userCreate from './user.js';
 //make a character object and store it to local storage? getCharacter and setCharacter functions already made
 //change window location to map after submit (after setting character)
 
-const userCharacterCreate = document.getElementById('create-character');
+const form = document.getElementById('create-character');
 
-userCharacterCreate.addEventListener('submit', (e) => {
+form.addEventListener('submit', (e) =>{
     e.preventDefault();
-    const formData = new FormData.HTML(setCharacter);
-    const user = userCreate(formData);
+    const data = new FormData(form);
+    const user = userCreate(data);
 
-    setCharacter(user);
 
+    setCharacter(user.value);
     window.location = 'map';
 
-
 });
+
  
 
 
