@@ -20,10 +20,17 @@
 //const choice = data.get('choice');
 
 // const search = new URLSearchParams(window.location.search);
- //const quest = findByID(quests, questId); 
+ //const quest = findByID(quests, questId);
 
 
  //const title = document.getElementById('title');
  //const description = document.getElementById('description');
  //const form = document.getElementById('choice-form');
  //const choice1 = document.getElementById('choice-1');
+
+const title = document.getElementById('title');
+const description1 = document.getElementById('description');
+const description2 = document.getElementById('description2');
+const description3 = document.getElementById('description3');
+
+
