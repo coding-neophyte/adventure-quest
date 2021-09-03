@@ -11,3 +11,4 @@ export function setCharacter(user){
     const stringyUser = JSON.stringify(user);
     localStorage.setItem(USER, stringyUser);
 }
+
