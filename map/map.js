@@ -11,17 +11,6 @@ import data from '../data/data.js';
 
 const ul = document.getElementById('ul');
 
-
-
-
-
-// link.textContent = quest.title;
-// link.href = `../quest/?id=${quest.id}`;
-
-// li.append(link);
-// ul.append(li);
-
-
 for (let quest of data) {
     const link = document.createElement('a');
     const li = document.createElement('li');
@@ -33,4 +22,19 @@ for (let quest of data) {
     li.append(link);
     ul.append(li);
 }
-//comment
+
+// ***********TODO*****************
+// 1) List Page handles completed tasks (render links for incomplete, other styles for completed)
+
+// check if quest is done during link creation, get data from local storage and check
+//  disable link and change its look if it is
+
+
+// 2) List Page detects end conditions and navigates to end page
+
+// goes at top of the page
+// get data from local storage, check if hp <= 0 or all quests are done
+// if end conditions, relocate window to end page
+
+
+// ***********************************
