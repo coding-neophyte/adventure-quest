@@ -21,7 +21,21 @@ for (let i = 1; i <= 3; i++){
     descriptionEl.textContent = currentQuest.choices[i - 1].description;
 }
 
+const formEl = document.querySelector('form');
+formEl.addEventListener('submit', (e)=> {
+    e.preventDefault();
+    const choiceResultEl = document.getElementById('choice-result');
+    const backMap = document.getElementById('back-map');
+    const data = new FormData(formEl);
+    const choicePicked = data.get('choice');
+    choiceResultEl.textContent = currentQuest.choices[choicePicked].result;
 
+    formEl.classList.add('hidden');
+    backMap.classList.remove('hidden');
+
+    
+
+});
 // ***********TODO*****************
 // 1) Handle form submit on quest page shows user description of results in the DOM and gives user a way to get back to the map page
 
