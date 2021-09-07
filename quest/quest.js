@@ -25,8 +25,15 @@ const formEl = document.querySelector('form');
 formEl.addEventListener('submit', (e)=> {
     e.preventDefault();
     const choiceResultEl = document.getElementById('choice-result');
+    const backMap = document.getElementById('back-map');
+    const data = new FormData(formEl);
+    const choicePicked = data.get('choice');
+    choiceResultEl.textContent = currentQuest.choices[choicePicked].result;
+
     formEl.classList.add('hidden');
-    choiceResultEl.classList.remove('hidden');
+    backMap.classList.remove('hidden');
+
+    
 
 });
 // ***********TODO*****************
