@@ -95,3 +95,7 @@ form > label {
     box-shadow: var(--shadow);
     font-size: 1.3rem;
 }
+
+.hidden {
+    display: none;
+}
