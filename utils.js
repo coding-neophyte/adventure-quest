@@ -14,7 +14,7 @@ export function renderUserStats(user) {
     userRace.textContent = `user race: ${user.race}`;
     userHearts.textContent = `user hp ${user.hp}`;
     userRupees.textContent = ` Rupees: ${user.rupees}`;
-    avatar.src = `../assets/${user.race}.jpeg`;
+    avatar.src = `../assets/${user.race}.png`;
 
     userStats.append(userName, userRace, userHearts, userRupees, avatar);
 
