@@ -41,12 +41,7 @@ formEl.addEventListener('submit', (e) => {
     user.hp += currentQuest.choices[choicePicked].hp;
     user.completed[currentQuest.id] = true;
     setCharacter(user);
-    console.log(user);
-
-
-
-
-
+   
 
 });
 
