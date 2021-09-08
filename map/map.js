@@ -6,11 +6,15 @@
 
 import { getCharacter } from '../local-storage.js';
 import data from '../data/data.js';
+import { findById, renderUserStats } from '../utils.js';
 
 // const quest = data[0];
 
 const ul = document.getElementById('ul');
+const userStatsDiv = document.getElementById('user-stats');
 const user = getCharacter();
+const userStats = renderUserStats(user);
+userStatsDiv.append(userStats);
 
 if (user.hp <= 0 || allQuestsComplete(user)) {
     window.location = '../results';
@@ -41,8 +45,8 @@ for (let quest of data) {
     }
 }
 
-function allQuestsComplete(user){
-    
+function allQuestsComplete(user) {
+
 
     for (let eachQuest of data) {
         const isComplete = user.completed[eachQuest.id];

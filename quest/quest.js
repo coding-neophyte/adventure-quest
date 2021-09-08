@@ -1,8 +1,11 @@
-import { findById } from '../utils.js';
+import { findById, renderUserStats } from '../utils.js';
 import data from '../data/data.js';
 import { getCharacter, setCharacter } from '../local-storage.js';
 
-
+const userStatsDiv = document.getElementById('user-stats');
+const user = getCharacter();
+const userStats = renderUserStats(user);
+userStatsDiv.append(userStats);
 
 const search = new URLSearchParams(window.location.search);
 const questId = search.get('id');
@@ -41,7 +44,7 @@ formEl.addEventListener('submit', (e) => {
     user.hp += currentQuest.choices[choicePicked].hp;
     user.completed[currentQuest.id] = true;
     setCharacter(user);
-   
+
 
 });
 
