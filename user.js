@@ -4,7 +4,7 @@ function userCreate(form){
         race: form.get('race'),
         hp: 3,
         rupees: 0,
-        completed: {}
+        completed: {},
     };
 
     return create;
