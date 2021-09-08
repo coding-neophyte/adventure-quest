@@ -20,3 +20,4 @@ export const hpMessages = {
     healthy: `you lived, but had no flair. You literally made all the right choices. How boring.`,
 
 };
+

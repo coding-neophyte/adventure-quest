@@ -11,18 +11,18 @@ import userCreate from './user.js';
 
 const form = document.getElementById('create-character');
 
-form.addEventListener('submit', (e) =>{
+form.addEventListener('submit', (e) => {
     e.preventDefault();
     const data = new FormData(form);
     const user = userCreate(data);
 
 
-    setCharacter(user.value);
+    setCharacter(user);
     window.location = 'map';
 
 });
 
- 
+
 
 
 
@@ -30,5 +30,3 @@ form.addEventListener('submit', (e) =>{
 
 //extras: clear user when returning to page and make new user
 //extras: move this to home folder and update all links
-
-
