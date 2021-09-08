@@ -27,9 +27,9 @@ function wealthyLink(user) {
     return 'rich';
 }
 
-// const user = getCharacter();
-const healthy = healthyLink(user);
-const wealthy = wealthyLink(user);
+// // const user = getCharacter();
+// const healthy = healthyLink(user);
+// const wealthy = wealthyLink(user);
 
 // healthy === 'dead' ? inject deadRupeeMessages: inject aliveRupeeMessages;
 // healthy
