@@ -1,0 +1,26 @@
+
+
+ul{
+    background-image: url(../assets/link-map.jpeg);
+    height: 1000px;
+    width: 1300px;
+    position: relative;
+
+
+}
+
+.link-styling{
+    color: black;
+    background-color: white;
+}
+
+.quest-link{
+    position: absolute;
+    font-size: 2rem;
+}
+
+.line-through{
+    text-decoration: line-through;
+    color: darkgreen;
+    background-color: white;
+}

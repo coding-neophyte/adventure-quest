@@ -112,15 +112,5 @@ footer {
 
   }
 
-  ul{
-      background-image: url(../assets/link-map.jpeg);
-      height: 1000px;
-      width: 1300px;
-      position: relative;
+  
 
-
-  }
-.quest-link{
-    position: absolute;
-
-}

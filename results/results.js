@@ -1,5 +1,5 @@
-// import { getCharacter } from '../local-storage.js';
-// import { aliveRupeeMessages, deadRupeeMessages, hpMessages } from './utils.js';
+import { getCharacter } from '../local-storage.js';
+import { aliveRupeeMessages, deadRupeeMessages, hpMessages } from './utils.js';
 
 
 
@@ -14,22 +14,28 @@
 // // hardcode a p tag and inject
 // // **********************************
 
-// const user = getCharacter();
-// function healthyLink(user) {
-//     if (user.hp <= 0) return 'dead';
-//     if (user.hp < 2) return 'frail';
-//     return 'healthy';
-// }
 
-// function wealthyLink(user) {
-//     if (user.rupees <= 0) return 'broke';
-//     if (user.rupees < 100) return 'comfortable';
-//     return 'rich';
-// }
+const user = getCharacter();
+function healthyLink(user) {
+    if (user.hp <= 0) return 'dead';
+    if (user.hp < 2) return 'frail';
+    return 'healthy';
+}
 
-// // // const user = getCharacter();
-// // const healthy = healthyLink(user);
-// // const wealthy = wealthyLink(user);
+function wealthyLink(user) {
+    if (user.rupees <= 0) return 'broke';
+    if (user.rupees < 100) return 'comfortable';
+    return 'rich';
+}
 
-// // healthy === 'dead' ? inject deadRupeeMessages: inject aliveRupeeMessages;
-// // healthy
+const healthy = healthyLink(user);
+const wealthy = wealthyLink(user);
+
+const linkHealthEl = document.querySelector('#link-health');
+const linkWealthEl = document.querySelector('#link-wealth');
+
+healthy === 'dead' 
+    ? linkWealthEl.textContent = deadRupeeMessages[wealthy]
+    : linkWealthEl.textContent = aliveRupeeMessages[wealthy];
+
+linkHealthEl.textContent = hpMessages[healthy];
